@@ -52,22 +52,16 @@
             <legend class="hotel-filters-title">Инфраструктура:</legend>
             <ul class="hotel-filters-list">
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-checkbox" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
-                </label>
+                <input class="hotel-filters-checkbox" type="checkbox" id="swimming-pool-checkbox" name="swimming-pool" checked>
+                <label class="hotel-filters-item" for="swimming-pool-checkbox">Бассейн</label>
               </li>
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-checkbox" type="checkbox" name="parking" checked>
-                  Парковка
-                </label>
+                <input class="hotel-filters-checkbox" type="checkbox" id="parking-checkbox" name="parking" checked>
+                <label class="hotel-filters-item" for="parking-checkbox">Парковка</label>
               </li>
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-checkbox" type="checkbox" name="wi-fi">
-                  Wi-Fi
-                </label>
+                <input class="hotel-filters-checkbox" type="checkbox" id="wifi-checkbox" name="wi-fi">
+                <label class="hotel-filters-item" for="wifi-checkbox">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -75,34 +69,26 @@
             <legend class="hotel-filters-title">Тип жилья:</legend>
             <ul class="hotel-filters-list">
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-radio" type="radio" name="housing-group" checked>
-                  Гостиница
-                </label>
+                <input class="hotel-filters-radio" type="radio" id="hotel-radio" name="housing-group" checked>
+                <label class="hotel-filters-label" for="hotel-radio">Гостиница</label>
               </li>
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-radio" type="radio" name="housing-group">
-                  Мотель
-                </label>
+                <input class="hotel-filters-radio" type="radio" id="motel-radio" name="housing-group">
+                <label class="hotel-filters-label" for="motel-radio">Мотель</label>
               </li>
               <li class="hotel-filters-item">
-                <label class="hotel-filters-label">
-                  <input class="hotel-filters-radio" type="radio" name="housing-group">
-                  Апартаменты
-                </label>
+                <input class="hotel-filters-radio" type="radio" id="apartments-radio" name="housing-group">
+                <label class="hotel-filters-label" for="apartments-radio">Апартаменты</label>
               </li>
             </ul>
             </fieldset>
             <fieldset class="hotel-filters-price">
               <legend class="hotel-filters-title">Стоимость, ₽:</legend>
               <div class="price-controls">
-                <label class="price-value">от
-                  <input class="price-field" type="text" name="min-price" value="0">
-                </label>
-                <label class="price-value">до
-                  <input class="price-field" type="text" name="max-price" value="9000">
-                </label>
+                <input class="price-field" type="text" id="price-from" name="min-price" value="0">
+                <label class="price-value" for="price-from">от</label>
+                <input class="price-field" type="text" id="price-before" name="max-price" value="9000">
+                <label class="price-value" for="price-before">до</label>
               </div>
               <button class="hotel-price-button" type="submit">Применить</button>
               <button class="hotel-price-button" type="reset">Сбросить</button>
