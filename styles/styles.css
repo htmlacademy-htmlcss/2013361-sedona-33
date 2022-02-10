@@ -34,6 +34,12 @@ body {
   background-color: #FFFFFF;
 }
 
+/* Nav */
+
+.navigation-list {
+  list-style-type: none;
+}
+
 .navigation-link {
   color: #000000;
   font-size: 20px;
@@ -87,10 +93,13 @@ body {
 /* List */
 
 .edge-list {
+  list-style-type: none;
   text-align: center;
+
 }
 
 .edge-sublist {
+  list-style-type: none;
   text-align: center;
 }
 
@@ -201,12 +210,18 @@ body {
 }
 
 .subscription {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   text-align: center;
   background-image: url(/images/background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.subscription-catalog {
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
 }
 
 .subscription-title {
@@ -253,7 +268,206 @@ body {
   text-transform: uppercase;
 }
 
+.main-footer-social {
+  list-style-type: none;
+}
+
 .footer-tel {
   color: #000000;
   text-decoration: none;
 }
+
+/* Catalog */
+
+.hotels-sedona {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url(/images/catalog/catalog-background-1.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hotel-filters-infrastructure {
+  border: none;
+}
+
+.preference-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.preference-hotel {
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hotel-filters-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.hotel-filters-list {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.price-controls {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hotel-price-button {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-price-button-second {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.results-value {
+  color: #000000;
+  font-size: 30px;
+  line-height: 39px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.results-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.results-list {
+  background-color: #FFFFFF;
+  text-align: center;
+  list-style-type: none;
+}
+
+.results-list-item-title {
+  color: #000000;;
+  font-size: 24px;
+  line-height: 31px;
+  font-style: normal;
+  font-weight: bold;
+ }
+
+.results-list-item-description {
+  color: #333333;
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+ }
+
+.results-list-detail {
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #756257;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.results-list-reserved {
+  background: #83B3D3;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.results-list-reserved-green {
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: bold;
+  background: #7DB54F;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.results-list-rating {
+  color: #333333 ;
+  background: #F2F2F2;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-information {
+  text-align: center;
+}
+
+.load-more-btn {
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  background: #83B3D3;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.pagination a {
+  background-color: #83B3D3 ;
+  text-decoration: none;
+}
+
+.pagination {
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+}
+
+ .pagination-current {
+   color: #000000;
+ }
+
