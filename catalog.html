@@ -59,10 +59,12 @@
     <div class="page-container">
     <section class="hotels-sedona">
       <h1 class="preference-title">Гостиницы Седоны</h1>
-      <a class="main-link" href="index.html">
-        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/></svg>
-      </a>
-      <p class="preference-hotel">Гостиницы</p>
+      <div class="main-link-wrapper">
+        <a class="main-link" href="index.html">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/></svg>
+        </a>
+        <p class="preference-hotel">Гостиницы</p>
+      </div>
       <div class="hotel-search">
         <form class="hotel-filters" action="https://echo.htmlacademy.ru" method="get">
           <div class="hotel-filters-wrapper">
@@ -123,7 +125,7 @@
           <p class="results-value">Найдено гостиниц: 38</p>
         </div>
         <form class="results-sorting" action="https://echo.htmlacademy.ru" method="post">
-          <select name="breadcrumbs">
+          <select name="hotel-choice">
             <option>Сначала дешёвые</option>
             <option>Сначала дорогие</option>
             <option>Популярные</option>
@@ -144,57 +146,81 @@
 
       <div class="results-wrapper">
       <ul class="results-list">
-        <li>
-            <img class="hotels-img" src="images/catalog/hotels/hotel-1.jpg" width="300" height="206" alt="Amara resort and spa">
-            <div class="results-list-item-amara">
-              <a href="#">
-                <h2 class="results-list-item-title">Amara Resort & Spa</h2>
-              </a>
-              <p class="results-list-item-description">Гостиница</p>
-              <p class="results-list-item-description">От 4000 ₽</p>
-              <a class="results-list-detail" href="#">Подробнее</a>
-							<a class="results-list-reserved" href="#">В избранное</a>
-              <p class="results-list-rating four-star">Рейтинг: 8,5</p>
-            </div>
+        <li class="results-list-item">
+              <img class="product-card-image-link" src="images/catalog/hotels/hotel-1.jpg" width="300" height="206" alt="Amara resort and spa">
+                <div class="title-wrapper">
+                  <a href="#">
+                    <h2 class="results-list-item-title">Amara Resort & Spa</h2>
+                  </a>
+                </div>
+                <div class="description-wrapper">
+                  <p class="results-list-item-description">Гостиница</p>
+                  <p class="results-list-item-description">От 4000 ₽</p>
+                </div>
+                <div class="results-list-detail-wrapper">
+                  <a class="results-list-detail" href="#">Подробнее</a>
+                  <a class="results-list-reserved" href="#">В избранное</a>
+                </div>
+                <div class="results-list-rating-wrapper">
+                  <p class="results-list-rating four-star">Рейтинг: 8,5</p>
+                </div>
         </li>
-        <li>
-            <img class="hotels-img" src="images/catalog/hotels/hotel-2.jpg" width="300" height="206" alt="Desert quail inn">
-            <div class="results-list-item-quail">
-              <a href="#">
-                <h2 class="results-list-item-title">Desert Quail Inn</h2>
-              </a>
-              <p class="results-list-item-description">Гостиница</p>
-              <p class="results-list-item-description">От 3000 ₽</p>
-              <a class="results-list-detail" href="#">Подробнее</a>
-							<a class="results-list-reserved" href="#">В избранное</a>
-              <p class="results-list-rating three-star">Рейтинг: 8,9</p>
-            </div>
+        <li class="results-list-item">
+              <img class="product-card-image-link" src="images/catalog/hotels/hotel-2.jpg" width="300" height="206" alt="Desert quail inn">
+                <div class="title-wrapper">
+                  <a href="#">
+                    <h2 class="results-list-item-title">Desert Quail Inn</h2>
+                  </a>
+                </div>
+                <div class="description-wrapper">
+                  <p class="results-list-item-description">Гостиница</p>
+                  <p class="results-list-item-description">От 3000 ₽</p>
+                </div>
+                <div class="results-list-detail-wrapper">
+                  <a class="results-list-detail" href="#">Подробнее</a>
+                  <a class="results-list-reserved" href="#">В избранное</a>
+                </div>
+                <div class="results-list-rating-wrapper">
+                  <p class="results-list-rating three-star">Рейтинг: 8,9</p>
+                </div>
         </li>
-        <li>
-            <img class="hotels-img" src="images/catalog/hotels/hotel-3.jpg" width="300" height="206" alt="Villas at poco diablo">
-            <div class="results-list-item-diablo">
-              <a href="#">
-                <h2 class="results-list-item-title">Villas at Poco Diablo</h2>
-              </a>
-              <p class="results-list-item-description">Гостиница</p>
-              <p class="results-list-item-description">От 2000 ₽</p>
-              <a class="results-list-detail" href="#">Подробнее</a>
-							<a class="results-list-reserved-green" href="#">В избранном</a>
-              <p class="results-list-rating two-star">Рейтинг: 9,2</p>
-            </div>
+        <li class="results-list-item">
+              <img class="product-card-image-link" src="images/catalog/hotels/hotel-3.jpg" width="300" height="206" alt="Villas at poco diablo">
+                <div class="title-wrapper">
+                  <a href="#">
+                    <h2 class="results-list-item-title">Villas at Poco Diablo</h2>
+                  </a>
+                </div>
+                <div class="description-wrapper">
+                  <p class="results-list-item-description">Гостиница</p>
+                  <p class="results-list-item-description">От 2000 ₽</p>
+                </div>
+                <div class="results-list-detail-wrapper">
+                  <a class="results-list-detail" href="#">Подробнее</a>
+                  <a class="results-list-reserved-green" href="#">В избранном</a>
+                </div>
+                <div class="results-list-rating-wrapper">
+                  <p class="results-list-rating two-star">Рейтинг: 9,2</p>
+                </div>
         </li>
-        <li>
-            <img class="sedona-img" src="images/catalog/hotels/hotel-4.jpg" width="300" height="206" alt="GreenTree Inn">
-            <div class="results-list-item-greentree">
-              <a href="#">
-                <h2 class="results-list-item-title">GreenTree Inn</h2>
-              </a>
-              <p class="results-list-item-description">Гостиница</p>
-              <p class="results-list-item-description">От 3000 ₽</p>
-              <a class="results-list-detail" href="#">Подробнее</a>
-							<a class="results-list-reserved" href="#">В избранное</a>
-              <p class="results-list-rating two-star">Рейтинг: 9,2</p>
-            </div>
+        <li class="results-list-item">
+              <img class="product-card-image-link" src="images/catalog/hotels/hotel-4.jpg" width="300" height="206" alt="GreenTree Inn">
+                <div class="title-wrapper">
+                  <a href="#">
+                    <h2 class="results-list-item-title">GreenTree Inn</h2>
+                  </a>
+                </div>
+                <div class="description-wrapper">
+                  <p class="results-list-item-description">Гостиница</p>
+                  <p class="results-list-item-description">От 3000 ₽</p>
+                </div>
+                <div class="results-list-detail-wrapper">
+                  <a class="results-list-detail" href="#">Подробнее</a>
+                  <a class="results-list-reserved" href="#">В избранное</a>
+                </div>
+                <div class="results-list-rating-wrapper">
+                  <p class="results-list-rating two-star">Рейтинг: 9,2</p>
+                </div>
         </li>
       </ul>
       </div>

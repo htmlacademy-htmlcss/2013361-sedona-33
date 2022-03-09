@@ -406,6 +406,13 @@ body {
   padding: 0;
 }
 
+.main-link-wrapper {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 45px;
+}
+
 .hotel-filters-list {
   margin: 0;
   padding: 0;
@@ -422,14 +429,10 @@ body {
   padding: 0;
 }
 
-.results-wrapper {
-  display: flex;
-  margin: 0 auto;
-}
-
 .preference-title {
   margin: 0;
-  padding: 0;
+  padding-left: 71px;
+  padding-top: 35px;
   font-size: 60px;
   line-height: 78px;
   font-style: normal;
@@ -437,6 +440,7 @@ body {
 }
 
 .preference-hotel {
+  margin: 0;
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
@@ -444,6 +448,7 @@ body {
 }
 
 .hotel-filters-title {
+  padding-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
   font-style: normal;
@@ -451,11 +456,17 @@ body {
 }
 
 .hotel-filters-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   font-size: 18px;
   line-height: 23px;
   font-style: normal;
   font-weight: normal;
+}
+
+.hotel-filters-item {
+  padding-bottom: 13px;
 }
 
 .price-controls {
@@ -474,12 +485,11 @@ body {
 .button-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin: 0;
-  padding: 0;
 }
 
 .hotel-price-button {
+  margin-bottom: 20px;
   color: #FFFFFF;
   background-color: #83B3D3;
   font-size: 16px;
@@ -507,12 +517,15 @@ body {
 }
 
 /* Results*/
+
 .results {
   margin: 0 auto;
   width: 1057px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 56px;
 }
 
 .results-index {
@@ -538,8 +551,6 @@ body {
   padding: 17px 17px;
   justify-content: space-around;
   align-items: center;
-  width: 48px;
-  height: 48px;
   text-decoration: none;
 }
 
@@ -548,16 +559,64 @@ body {
   text-decoration: none;
 }
 
+.results-wrapper {
+  margin: 0 auto;
+}
+
 .results-list {
-  display: flex;
+  display: grid;
   margin: 0;
   padding: 0;
+  grid-template-columns: 340px 340px 340px;
+  gap: 30px 18px;
   background-color: #FFFFFF;
   text-align: center;
   list-style-type: none;
 }
 
+.results-list-item {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.description-wrapper {
+  display: flex;
+  width: 299px;
+  height: 23px;
+}
+
+.results-list-detail-wrapper {
+  width: 300px;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-list-rating-wrapper {
+  display: flex;
+  width: 300px;
+  height: 37px;
+}
+
+.product-card-image-link {
+  display: flex;
+  margin: 0 auto;
+}
+
 .results-list-item-title {
+  display: flex;
+  margin: 0;
   color: #000000;;
   font-size: 24px;
   line-height: 31px;
@@ -566,6 +625,11 @@ body {
  }
 
 .results-list-item-description {
+  display: flex;
+  padding-right: 25px;
+  width: 133px;
+  height: 23px;
+  margin: 0;
   color: #333333;
   font-size: 18px;
   line-height: 23px;
@@ -574,16 +638,25 @@ body {
  }
 
 .results-list-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 133px;
+  height: 37px;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
   background-color: #756257;
   border-radius: 4px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .results-list-reserved {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 140px;
+  height: 37px;
   background: #83B3D3;
   border-radius: 4px;
   font-size: 16px;
@@ -594,6 +667,11 @@ body {
 }
 
 .results-list-reserved-green {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 140px;
+  height: 37px;
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
@@ -605,6 +683,10 @@ body {
 }
 
 .results-list-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
   width: 134px;
   height: 37px;
   color: #333333 ;
@@ -619,6 +701,8 @@ body {
 }
 
 .load-more-wrapper {
+  padding-top: 64px;
+  padding-bottom: 60px;
   width: 1200px;
   display: flex;
   flex-direction: column;
