@@ -136,6 +136,7 @@ body {
 }
 
 .link-favorite-count {
+  box-sizing: border-box;
   position: absolute;
   right: 0;
   top: 10px;
@@ -224,7 +225,7 @@ body {
   width: 100%;
   height: 57px;
   position: absolute;
-  left: 2px;
+  left: 3px;
   top: 494px;
   background-image: url("../images/vector.png");
   background-repeat: no-repeat;
@@ -401,11 +402,12 @@ body {
 /* Hotels */
 
 .hotels {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   text-align: center;
 }
 
 .hotels-wrapper {
+  background: #FFFFFF;
   width: 1200px;
   height: 417px;
   margin: 0;
@@ -517,6 +519,7 @@ body {
 }
 
 .subscription-email {
+  text-indent: 22px;
   background-color:#F2F2F2;
   width: 600px;
   height: 60px;
