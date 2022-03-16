@@ -153,13 +153,15 @@
         <div class="results-index">
           <p class="results-value">Найдено гостиниц: 38</p>
         </div>
-        <form class="results-sorting" action="https://echo.htmlacademy.ru" method="post">
-          <select name="hotel-choice">
-            <option>Сначала дешёвые</option>
-            <option>Сначала дорогие</option>
-            <option>Популярные</option>
-          </select>
-        </form>
+        <div class="select-container">
+          <div class= "select sorting-type">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешёвые</option>
+              <option value="cheap">Сначала дорогие</option>
+              <option value="expensive">Сначала популярные</option>
+            </select>
+          </div>
+        </div>
         <div class="sorting-container">
           <a href="#" class="sorting-button">
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
@@ -296,14 +298,14 @@
 
         <div class="hotels-value-wrapper">
           <p class="hotels-value">Гостиниц на странице:</p>
-          <form class="hotels-value-sorting" action="https://echo.htmlacademy.ru" method="post">
-            <select name="hotels-sorting">
-              <option>4</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
-          </form>
+            <div class="hotels-sorting-wrapper">
+              <select class="hotels-sorting">
+                <option>4</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
           </div>
         </div>
 
