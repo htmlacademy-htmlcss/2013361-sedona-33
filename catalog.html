@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -18,7 +18,7 @@
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#nowhere">О Седоне</a>
+            <a class="navigation-link navigation-link-about" href="#nowhere">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current navigation-link-current-catalog" href="catalog.html">Гостиницы</a>
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="btn btn-brown" href="#nowhere">Хочу сюда</a>
+            <a class="btn btn-brown" href="#nowhere">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -164,13 +164,13 @@
           </div>
         </div>
         <div class="sorting-container">
-          <a href="#" class="sorting-button">
+          <a href="#" class="sorting-button sorting-button-first">
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
           </a>
           <a href="#" class="sorting-button">
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
           </a>
-          <a href="#" class="sorting-button">
+          <a href="#" class="sorting-button sorting-button-last">
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
           </a>
         </div>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="description-wrapper">
                   <p class="results-list-item-description">Гостиница</p>
-                  <p class="results-list-item-description">От 4000 ₽</p>
+                  <p class="results-list-item-price">От 4000 ₽</p>
                 </div>
                 <div class="results-list-detail-wrapper">
                   <a class="results-list-detail" href="#">Подробнее</a>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="description-wrapper">
                   <p class="results-list-item-description">Гостиница</p>
-                  <p class="results-list-item-description">От 3000 ₽</p>
+                  <p class="results-list-item-price">От 3000 ₽</p>
                 </div>
                 <div class="results-list-detail-wrapper">
                   <a class="results-list-detail" href="#">Подробнее</a>
@@ -233,7 +233,7 @@
                 </div>
                 <div class="description-wrapper">
                   <p class="results-list-item-description">Гостиница</p>
-                  <p class="results-list-item-description">От 2000 ₽</p>
+                  <p class="results-list-item-price">От 2000 ₽</p>
                 </div>
                 <div class="results-list-detail-wrapper">
                   <a class="results-list-detail" href="#">Подробнее</a>
@@ -255,7 +255,7 @@
                 </div>
                 <div class="description-wrapper">
                   <p class="results-list-item-description">Гостиница</p>
-                  <p class="results-list-item-description">От 3000 ₽</p>
+                  <p class="results-list-item-price">От 3000 ₽</p>
                 </div>
                 <div class="results-list-detail-wrapper">
                   <a class="results-list-detail" href="#">Подробнее</a>
@@ -315,7 +315,9 @@
             <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
             <p class="subscription-description subscription-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
               <form class="subscription-form" action="/" method="post">
-                <input class="subscription-email" id="email" type="email" placeholder="Ваш e-mail">
+                <label>
+                  <input class="subscription-email" id="email" type="email" placeholder="Ваш e-mail">
+                </label>
                 <button class="subscription-btn" type="submit">Подписаться</button>
               </form>
             </div>
